@@ -9,9 +9,9 @@ First pull the git repository.
 
 `$ git clone https://github.com/jesse-greathouse/shop-manager.git`
 
-Switch to the site-manager directory
+Switch to the shop-manager directory
 
-`$ cd site-manager`
+`$ cd shop-manager`
 
 ## Running the application
 
