@@ -1,0 +1,793 @@
+{
+	"info": {
+		"_postman_id": "b7d7a694-bbda-4ff3-95fb-7d74416e2605",
+		"name": "shop-manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "appointment",
+			"item": [
+				{
+					"name": "appointment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/appointment",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"appointment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "drop_off",
+									"value": "2020-05-02 11:51:00",
+									"type": "text"
+								},
+								{
+									"key": "pick_up",
+									"value": "2020-05-02 17:31:00",
+									"type": "text"
+								},
+								{
+									"key": "appointment_job_type",
+									"value": "repair",
+									"type": "text"
+								},
+								{
+									"key": "mechanic_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "vehicle_id",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/appointment",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"appointment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/appointment/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "drop_off",
+									"value": "2020-05-02 11:51:00",
+									"type": "text"
+								},
+								{
+									"key": "pick_up",
+									"value": "2020-05-02 17:31:00",
+									"type": "text"
+								},
+								{
+									"key": "appointment_job_type",
+									"value": "repair",
+									"type": "text"
+								},
+								{
+									"key": "mechanic_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "vehicle_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/appointment/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/appointment/54",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"appointment",
+								"54"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/customer",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"customer"
+							]
+						},
+						"description": "gets the customer list"
+					},
+					"response": []
+				},
+				{
+					"name": "customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "Greg",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Strause",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "5151 N Cherrybrook LN\\nLincoln, Nebraska 71049",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "(207) 555-9542",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "gregstrause68@hotmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/customer",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/customer/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "Gary",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Jefferson",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "2948 E Westerbrook RD\\n Lexington, KY 69482",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "(305) 281-8545",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "garyjefferson298@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/customer/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/customer/300",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"300"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "mechanic",
+			"item": [
+				{
+					"name": "mechanic",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanic",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mechanic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "Larry",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Rodriguez",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanic",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mechanic/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanic/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mechanic/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "Paulo",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Smith",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanic/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mechanic/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanic/61",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanic",
+								"61"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "mechanicspecialty",
+			"item": [
+				{
+					"name": "mechanicspecialty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanicspecialty",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanicspecialty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mechanicspecialty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "job_type",
+									"value": "repair",
+									"type": "text"
+								},
+								{
+									"key": "mechanic_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanicspecialty",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanicspecialty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mechanicspecialty/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanicspecialty/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanicspecialty",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mechanicspecialty/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "job_type",
+									"value": "maintenance",
+									"type": "text"
+								},
+								{
+									"key": "mechanic_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanicspecialty/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanicspecialty",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mechanicspeciality/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/mechanicspecialty/62",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"mechanicspecialty",
+								"62"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ff853f4c-f3d8-47cc-8bf5-e6083427dc4b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "8a64a21d-f964-423b-83bc-181285d991d1",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "vehicle",
+			"item": [
+				{
+					"name": "vehicle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/vehicle",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vehicle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "make",
+									"value": "Toyota",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "Yaris",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2018",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": "Red Hatchback",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/vehicle",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vehicle/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/vehicle/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"vehicle",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vehicle/id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "make",
+									"value": "Toyota",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "Prius",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2005",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": "blue",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/vehicle/1",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"vehicle",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vehicle/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{shop-manager-proticol}}://{{shop-manager-domain}}{{shop-manager-port}}/api/vehicle/250",
+							"protocol": "{{shop-manager-proticol}}",
+							"host": [
+								"{{shop-manager-domain}}{{shop-manager-port}}"
+							],
+							"path": [
+								"api",
+								"vehicle",
+								"250"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
