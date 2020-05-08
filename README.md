@@ -13,6 +13,12 @@ Switch to the shop-manager directory
 
 `$ cd shop-manager`
 
+Copy the environment file.
+
+`$ cp .env.example .env`
+
+Now that you have your environment file set up, open your environment file and update the MySQL configs to work in your local environment.
+
 ## Running the application
 
 ### Migrations
