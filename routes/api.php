@@ -52,7 +52,7 @@ Route::post('/appointment', function (Request $request) {
     $validator = Validator::make($request->all(), [
         'drop_off'              => ['required', 'date'],
         'pick_up'               => ['required', 'date'],
-        'appointment_job_type'  => ['required','', 'string', new IsJobType()],
+        'appointment_job_type'  => ['required', 'string', new IsJobType()],
         'mechanic_id'           => ['required', 'integer', 
                                     new MechanicAvailable($request), 
                                     new MechanicRequiresSpeciality($request)],
@@ -80,7 +80,7 @@ Route::put('/appointment/{id}', function (Request $request, $id) {
     $validator = Validator::make($request->all(), [
         'drop_off'              => ['required', 'date'],
         'pick_up'               => ['required', 'date'],
-        'appointment_job_type'  => ['required','', 'string', new IsJobType()],
+        'appointment_job_type'  => ['required', 'string', new IsJobType()],
         'mechanic_id'           => ['required', 'integer', 
                                     new MechanicAvailable($request, $id),
                                     new MechanicRequiresSpeciality($request)],
